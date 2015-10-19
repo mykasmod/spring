@@ -11,4 +11,9 @@
 	 # 3. Right click project > Properties > Project Facets > Java 1.7 & Runtimes tab > jdk1.7.X_XX
 	 # 4. Right click project > Properties > Java Compiler > Compiler compliance level 1.7
 	 # 5. Right click project > Build Path > Configure Build Path > Libraries > jdk1.7.X_XX
+# 3 Understanding Spring Bean Factory
+	 # MMA: Spring Bean Factory is an implementation of Factory pattern
+	 # MMA: Bean Factory creates a bean (Spring Bean) from Spring XML(spring.xml) blueprint.
+	 # MMA: The calling object(main method) ask for Spring Bean from Bean Factory, Bean Factory reads the Spring XML
+	 
 	 
