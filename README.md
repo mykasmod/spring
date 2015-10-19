@@ -15,5 +15,8 @@
 	 # MMA: Spring Bean Factory is an implementation of Factory pattern
 	 # MMA: Bean Factory creates a bean (Spring Bean) from Spring XML(spring.xml) blueprint.
 	 # MMA: The calling object(main method) ask for Spring Bean from Bean Factory, Bean Factory reads the Spring XML
-	 
-	 
+
+# 4 Writing Code Using the Bean Factory
+	 # Good to know:
+	 	- ApplicationContext is a subclass of BeanFactory interface. BeanFactory shouldn't be used directly.
+	 	- Moving from DTD to XML Schema-based configuration for spring(application-context).xml. As the objects defined in a Spring XML configuration file are not all generic, vanilla beans. Usually, each bean requires some degree of specific configuration.
