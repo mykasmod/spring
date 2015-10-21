@@ -21,4 +21,5 @@
 	 	-ApplicationContext is a subclass of BeanFactory interface. BeanFactory shouldn't be used directly.
 	 	-Moving from DTD to XML Schema-based configuration for spring(application-context).xml. As the objects defined in a Spring XML configuration file are not all generic, vanilla beans. Usually, each bean requires some degree of specific configuration.
 	 	
-# 5 TODO
+# 5 Application Context and Property Initialization
+	# Need to move spring.xml under "src" folder for ClassPathXmlApplicationContext to work
