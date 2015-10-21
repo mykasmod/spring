@@ -23,3 +23,5 @@
 	 	
 # 5 Application Context and Property Initialization
 	# Need to move spring.xml under "src" folder for ClassPathXmlApplicationContext to work
+	# Created new member variable "type" in Triangle
+	# Assigned a value of member variable through bean property
