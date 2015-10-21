@@ -22,6 +22,7 @@
 	 	-Moving from DTD to XML Schema-based configuration for spring(application-context).xml. As the objects defined in a Spring XML configuration file are not all generic, vanilla beans. Usually, each bean requires some degree of specific configuration.
 	 	
 # 5 Application Context and Property Initialization
-	# Need to move spring.xml under "src" folder for ClassPathXmlApplicationContext to work
+	# Needed to move spring.xml under "src" folder for ClassPathXmlApplicationContext to work
 	# Created new member variable "type" in Triangle
 	# Assigned a value of member variable through bean property
+	
