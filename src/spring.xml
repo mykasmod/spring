@@ -6,7 +6,7 @@
 
 	<bean id="triangle" class="org.asmod.spring.Triangle" >
 		<constructor-arg type="java.lang.String" value="Equilateral" />
-		<constructor-arg value="20" />
+		<constructor-arg type="int" value="20" />
 	</bean>
 
 </beans>
