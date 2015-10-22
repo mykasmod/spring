@@ -36,3 +36,9 @@
 # 7 Injecting Objects
 	# Use Spring dependency injection to prepopulate the member variables of Triangle
 	# The getBean of first level Spring bean will automatically inject the dependent spring bean
+	
+# 8 Inner Beans Aliases and idref
+	# Moving the bean definition of dependent bean inside the property of Triangle object
+	# No point in having an id for inner bean, not referenced by other bean
+	# There's no performance benefits of moving the definition inside the bean property. Moved to the bean where it's needed.
+	 
