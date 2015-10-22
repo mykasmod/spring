@@ -15,8 +15,5 @@ public class DrawingApp {
 	Triangle triangle = (Triangle) applicationContext.getBean("triangle");
 	triangle.draw();
 
-	System.out.println("### Using contructor-arg ### \ntriangle.getType():"
-		+ triangle.getType() + "\ntriangle.getHeight():"
-		+ triangle.getHeight());
     }
 }

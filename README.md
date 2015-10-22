@@ -32,3 +32,7 @@
 	# Changed bean property to constructor-arg
 	# Using constructor-arg value
 	# Using constructor-arg with index, depending in order of parameter
+
+# 7 Injecting Objects
+	# Use Spring dependency injection to prepopulate the member variables of Triangle
+	# The getBean of first level Spring bean will automatically inject the dependent spring bean
