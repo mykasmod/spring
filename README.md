@@ -26,3 +26,9 @@
 	# Created new member variable "type" in Triangle
 	# Assigned a value of member variable through bean property
 	
+# 6 Using Constructor injection
+	# Created Triangle constructor with String "type" parameter
+		- assign member variable with the value of parameter	 
+	# Changed bean property to constructor-arg
+	# Using constructor-arg value
+	
