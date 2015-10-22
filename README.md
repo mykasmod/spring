@@ -31,4 +31,5 @@
 		- assign member variable with the value of parameter	 
 	# Changed bean property to constructor-arg
 	# Using constructor-arg value
+	# Using constructor-arg with type, bean parameters must match number of constructor arguments   
 	
