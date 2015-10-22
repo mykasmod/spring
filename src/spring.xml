@@ -5,8 +5,8 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	<bean id="triangle" class="org.asmod.spring.Triangle" >
-		<constructor-arg type="java.lang.String" value="Equilateral" />
-		<constructor-arg value="20" />
+		<constructor-arg index="0" value="Equilateral" />
+		<constructor-arg index="1" value="20" />
 	</bean>
 
 </beans>
