@@ -41,4 +41,11 @@
 	# Moving the bean definition of dependent bean inside the property of Triangle object
 	# No point in having an id for inner bean, not referenced by other bean
 	# There's no performance benefits of moving the definition inside the bean property. Moved to the bean where it's needed.
+
+# 9 Initializing Collections
+	# Changed member variable to a list of Point objects
+	# Replaced with the property with the new member variable "points"
+	# Initialize the member variable by specifying the list of points inside the property of bean bean definition
+	# There is type conversion happening when using List
+	# Can use Set and Map as well instead of List
 	 
