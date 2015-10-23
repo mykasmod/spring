@@ -44,8 +44,8 @@
 
 # 9 Initializing Collections
 	# Changed member variable to a list of Point objects
-	# Replaced with the property with the new member variable "points"
-	# Initialize the member variable by specifying the list of points inside the property of bean bean definition
-	# There is type conversion happening when using List
+	# Replaced the property with the new member variable "points"
+	# Initialize the member variable by specifying the list of points inside the property of bean definition
+	# There is automatic type conversion happening when the ref elements value of property are different from the Generics type of member variable. In this example a Point type. 
 	# Can use Set and Map as well instead of List
 	 
