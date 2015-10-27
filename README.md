@@ -55,6 +55,9 @@
 	# Without autowiring we have to manually add the three member variables of the class to the property tag in spring bean configuration.
 	# Autowire byName is to have the same name as member variable of the class.
 	# With autowire there's no need to add the properties and reference under the bean tag
-			
+	# Autowire byType works if we have one member variable and one and only one bean
+	# Autowire by "constructor" is the same as byType and must only have one bean per type
+	# If you do not specify autowire, the default is off.
+	# Not recommended to have large amount of bean autowired, it's hard to debug dependencies.  It's ok to autowire small amount of bean.
 		
 	 
