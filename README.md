@@ -59,5 +59,22 @@
 	# Autowire by "constructor" is the same as byType and must only have one bean per type
 	# If you do not specify autowire, the default is off.
 	# Not recommended to have large amount of bean autowired, it's hard to debug dependencies.  It's ok to autowire small amount of bean.
+
+# 11 Understanding Bean Scopes
+	# The default way of Spring
+		- When ApplicationContext initialized > ApplicationContext refers to Spring XML > ApplicationContext then creates the bean > ApplicationContext. When the callingObject.getBean happens that's when the ApplicationContext hands-over the bean that has been created.
+		- Can configure a bean that will initialized only when the getBean happens.
+		- Can also configure the ApplicationContext to initialize the beans when the calling object.getBean happens.
 		
-	 
+	# Basic Bean Scopes
+		- Singleton. Once you have initialized the applicationcontext, it will look all the bean in spring xml and will initialize one bean per bean definition. Only one instance will be hand-over to every call of getBean. If you have another getBean of the same object it will use the same instance.
+	 		- Default behavior of Beans 
+	 	- Prototype. New bean created with every request or reference. Will create new object and pass to getBean or object reference.
+	 		- If bean is defined as prototype Spring waits for getBean to happen and only then it initializes the prototype, every getBean/Reference creates a new instances.
+	
+	# Web-aware Context Bean Scopes
+		- Request scope - New bean per servlet request
+				- The same bean will be used in the same request.
+		- Session - New bean per session.
+				- If New User in different session a new bean is created.
+		- Global Session - New bean per global HTTP session (portlet context)
