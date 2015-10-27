@@ -78,3 +78,10 @@
 		- Session - New bean per session.
 				- If New User in different session a new bean is created.
 		- Global Session - New bean per global HTTP session (portlet context)
+# 12 Using ApplicationContextAware
+	- Another use of ApplicationContext getBean in your bean instead of wiring them in spring xml.
+		- If the parent is singleton and the reference bean is prototype it will be initialized only once because the parent is initialized only once.
+			- If want to create new instances of pointA, B, C whenever needed in the code, one way to do is by using applicationContext.getBean and then call pointA, B, C, then get pointA, B, C when defined as prototype. 
+	- Another sample of bean aware interface, BeanNameAware
+	 
+		

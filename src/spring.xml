@@ -7,7 +7,7 @@
 	<bean id="triangle" class="org.asmod.spring.Triangle" autowire="byName" scope="singleton" >
 		
 	</bean>
-		<bean id="pointA" class="org.asmod.spring.Point" >
+		<bean id="pointA" class="org.asmod.spring.Point" scope="prototype" >
 			<property name="x" value="0" />
 			<property name="y" value="0" />	
 		</bean>			
