@@ -48,4 +48,13 @@
 	# Initialize the member variable by specifying the list of points inside the property of bean definition
 	# There is automatic type conversion happening when the ref elements value of property are different from the Generics type of member variable. In this example a Point type. 
 	# Can use Set and Map as well instead of List
+	
+# 10 Bean Autowiring
+	# Auto wiring is provided by Spring framework
+		- So far we know that every bean has to be configured
+	# Without autowiring we have to manually add the three member variables of the class to the property tag in spring bean configuration.
+	# Autowire byName is to have the same name as member variable of the class.
+	# With autowire there's no need to add the properties and reference under the bean tag
+			
+		
 	 
