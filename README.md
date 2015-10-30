@@ -83,5 +83,10 @@
 		- If the parent is singleton and the reference bean is prototype it will be initialized only once because the parent is initialized only once.
 			- If want to create new instances of pointA, B, C whenever needed in the code, one way to do is by using applicationContext.getBean and then call pointA, B, C, then get pointA, B, C when defined as prototype. 
 	- Another sample of bean aware interface, BeanNameAware
-	 
+	
+# 13 Bean Definition Inheritance
+	- triangle1 will inherit the property of parenttriangle bean
+		- all three properties will be initialized
 		
+	- triangle2 will inherit the property of parenttriangle bean
+		- only property pointA and pointB will be initialized

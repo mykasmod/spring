@@ -4,9 +4,27 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="triangle" class="org.asmod.spring.Triangle" autowire="byName" scope="singleton" >
-		
+	
+	<bean id="parenttriangle" class="org.asmod.spring.Triangle" >
+		<property name="pointA" ref="pointA" />	
 	</bean>
+	
+	<!-- 
+		- triangle1 will inherit the property of parenttriangle bean
+			- all three properties will be initialized
+		  -->
+	<bean id="triangle1" class="org.asmod.spring.Triangle" parent="parenttriangle" >
+		<property name="pointB" ref="pointB" />
+		<property name="pointC" ref="pointC" />	
+	</bean>
+	
+	<!-- 
+		- tirangle2 will inherit the property of parenttriangle bean
+			- only property pointA and pointB will be initialized -->
+	<bean id="triangle2" class="org.asmod.spring.Triangle" parent="parenttriangle">
+		<property name="pointB" ref="pointB" />
+	</bean>
+	
 		<bean id="pointA" class="org.asmod.spring.Point" scope="prototype" >
 			<property name="x" value="0" />
 			<property name="y" value="0" />	
