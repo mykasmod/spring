@@ -90,3 +90,5 @@
 		
 	- triangle2 will inherit the property of parenttriangle bean
 		- only property pointA and pointB will be initialized
+		
+	- abstract in parentbean

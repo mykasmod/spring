@@ -5,10 +5,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
 	
-	<bean id="parenttriangle" class="org.asmod.spring.Triangle">
+	<bean id="parenttriangle" class="org.asmod.spring.Triangle" abstract="true">
 			<property name="points">
-				<list>
-					<ref bean="pointA"/>
+				<list merge="true">
+					
 				</list>
 			</property>
 	</bean>
