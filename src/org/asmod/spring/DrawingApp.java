@@ -16,4 +16,5 @@ public class DrawingApp {
 	triangle.draw();
 
     }
+
 }
