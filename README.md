@@ -104,6 +104,7 @@
 	- Disadvantage of InitializingBean, DisposableBean is implementing the Spring interface.
 	- Another way to do it is by using autowire="byName" init-method="myInit"
 	- Another way is to create clean method then use a destroy-method="myCleanup" in bean configuration
+	- Can also use both InitializingBean, DisposableBean and init-method, destroy-method
 	
 		
 	

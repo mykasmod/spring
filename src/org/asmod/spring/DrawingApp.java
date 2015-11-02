@@ -9,6 +9,7 @@ public class DrawingApp {
 
 	AbstractApplicationContext applicationContext = new ClassPathXmlApplicationContext(
 		"spring.xml");
+
 	// Enable DisposableBean
 	applicationContext.registerShutdownHook();
 	Triangle triangle = (Triangle) applicationContext.getBean("triangle");
