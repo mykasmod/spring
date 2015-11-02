@@ -102,5 +102,7 @@
 		- To destory resources after bean is used
 		- When Triangle bean is destroyed the method of DisposableBean.destroy is called
 	- Disadvantage of InitializingBean, DisposableBean is implementing the Spring interface.
+	- Another way to do it is by using autowire="byName" init-method="myInit"
+	
 		
 	

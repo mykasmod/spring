@@ -2,10 +2,7 @@ package org.asmod.spring;
 
 import java.util.List;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
-
-public class Triangle implements InitializingBean, DisposableBean {
+public class Triangle {
 
     private List<Point> points;
 
@@ -26,15 +23,15 @@ public class Triangle implements InitializingBean, DisposableBean {
 	this.points = points;
     }
 
-    @Override
-    public void afterPropertiesSet() throws Exception {
-	System.out
-		.println("InitializingBean afterPropertiesSet method for Triangle!");
-    }
-
-    @Override
-    public void destroy() throws Exception {
-	System.out.println("DisposableBean destroy method for Triangle!");
+    /*
+     * @Override public void afterPropertiesSet() throws Exception { System.out
+     * .println("InitializingBean afterPropertiesSet method for Triangle!"); }
+     * 
+     * @Override public void destroy() throws Exception {
+     * System.out.println("DisposableBean destroy method for Triangle!"); }
+     */
+    public void myInit() {
+	System.out.println("myInit called for Triangle");
     }
 
 }
