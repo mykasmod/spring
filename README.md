@@ -92,3 +92,15 @@
 		- only property pointA and pointB will be initialized
 		
 	- abstract in parentbean
+
+# 14 Lifecycle callbacks
+	- Using AbstractApplicationContext.registerShutdownHook
+	- Using implements InitializingBean
+		- To initialized a bean before properties are set
+		- When Triangle bean is initialized the method of Initialization.afterPropertiesSet is called	
+	- Using DisposableBean
+		- To destory resources after bean is used
+		- When Triangle bean is destroyed the method of DisposableBean.destroy is called
+	- Disadvantage of InitializingBean, DisposableBean is implementing the Spring interface.
+		
+	

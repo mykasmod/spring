@@ -1,19 +1,13 @@
 package org.asmod.spring;
 
-import java.util.Iterator;
 import java.util.List;
 
-import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.BeanNameAware;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
+import org.springframework.beans.factory.DisposableBean;
+import org.springframework.beans.factory.InitializingBean;
 
-public class Triangle {
+public class Triangle implements InitializingBean, DisposableBean {
 
     private List<Point> points;
-    private Point pointB;
-
-    private ApplicationContext applicationContext = null;
 
     public void draw() {
 
@@ -32,12 +26,15 @@ public class Triangle {
 	this.points = points;
     }
 
-    public Point getPointB() {
-	return pointB;
+    @Override
+    public void afterPropertiesSet() throws Exception {
+	System.out
+		.println("InitializingBean afterPropertiesSet method for Triangle!");
     }
 
-    public void setPointB(Point pointB) {
-	this.pointB = pointB;
+    @Override
+    public void destroy() throws Exception {
+	System.out.println("DisposableBean destroy method for Triangle!");
     }
 
 }
