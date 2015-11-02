@@ -105,6 +105,6 @@
 	- Another way to do it is by using autowire="byName" init-method="myInit"
 	- Another way is to create clean method then use a destroy-method="myCleanup" in bean configuration
 	- Can also use both InitializingBean, DisposableBean and init-method, destroy-method
-	
+	- Possible to move init-method, destroy-method globally by inserting to beans tag (in the example supported by using DTD schema)
 		
 	
