@@ -34,4 +34,7 @@ public class Triangle {
 	System.out.println("myInit called for Triangle");
     }
 
+    public void myCleanup() {
+	System.out.println("myCleanup called for Triangle");
+    }
 }

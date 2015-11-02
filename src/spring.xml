@@ -4,7 +4,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-	<bean id="triangle" class="org.asmod.spring.Triangle" autowire="byName" init-method="myInit">
+	<bean id="triangle" class="org.asmod.spring.Triangle" autowire="byName" init-method="myInit" destroy-method="myCleanup">
 		<property name="points">
 				<list>
 					<ref bean="pointA"/>
